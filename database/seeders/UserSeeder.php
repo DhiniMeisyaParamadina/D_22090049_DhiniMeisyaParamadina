@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+http://127.0.0.1:8000/dashboard
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -18,21 +18,15 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
-                'name' => 'Muhammad Ega Rama Fernanda',
-                'email' => 'egaram32@gmail.com',
-                'password' => Hash::make('ega123'),
+                'name' => 'Faizal Aji',
+                'email' => 'faizal@gmail.com',
+                'password' => Hash::make('123456'),
                 'level' => 'admin',
             ],
             [
-                'name' => 'Alfi Surya Pratama',
-                'email' => 'alfisuryap7@gmail.com',
-                'password' => Hash::make('surya123'),
-                'level' => 'admin',
-            ],
-            [
-                'name' => 'Andhito Galih ',
-                'email' => 'andhito@gmail.com',
-                'password' => Hash::make('andhito123'),
+                'name' => 'User 2',
+                'email' => 'user2@gmail.com',
+                'password' => Hash::make('123456'),
                 'level' => 'admin',
             ],
         ];

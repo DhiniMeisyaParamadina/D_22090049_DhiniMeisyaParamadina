@@ -279,6 +279,7 @@ class PerhitunganController extends Controller
             $rankingValue++;
         }
         // dd($rank);
-        return compact('rank');
+        return compact('rank', 'kriterias');
     }
+    
 }

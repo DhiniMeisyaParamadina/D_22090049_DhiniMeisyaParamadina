@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SPK TOPSIS</title>
+    <title>Rekomendasi Catering Terbaik</title>
     {{-- <link rel="icon" href="{{asset('img/logoRB-removebg-preview.png')}}" style="width: 100%;" > --}}
 <!-- Include Bootstrap Icons CSS (pastikan link ini di atas link favicon) -->
 <link rel="stylesheet" href="path/to/bootstrap-icons.css">
@@ -28,7 +28,7 @@
         var urlToRedirect = ev.currentTarget.getAttribute('href');
         console.log(urlToRedirect);
         swal({
-                title: "Apakah Yakin Ingin Menghapus Data!",
+                title: "Yakin Ingin Menghapus Data?",
                 text: "Data Tidak Akan Kembali Jika Di Hapus",
                 icon: "warning",
                 buttons: true,
@@ -45,7 +45,7 @@
         var urlToRedirect = ev.currentTarget.getAttribute('href');
         console.log(urlToRedirect);
         swal({
-                title: "Apakah Yakin Ingin Mengubah Data!",
+                title: "Yakin Ingin Mengubah Data?",
                 text: "Data Yang Telah Diubah Tidak Dapat Kembali!",
                 icon: "warning",
                 buttons: true,

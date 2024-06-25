@@ -4,7 +4,7 @@
 
 @section('contents')
     <div class="container">
-        <h2>Mengkonversikan data analisa kredit diatas kedalam bentuk fuzzy</h2>
+        <h2>Hasil Pembagi</h2>
 
         {{-- Add this section to inspect variables --}}
         {{-- {{ dd($normalisasi, $kriterias, $alternatifs, $pembagi) }} --}}
@@ -33,7 +33,7 @@
             </tbody>
         </table>
 
-        <h2>Menghitung matriks yang ternormalisasi</h2>
+        <h2>Tabel Normalisasi</h2>
 
         <table class="table table-striped">
             <thead class="thead-dark">
@@ -63,7 +63,7 @@
             </tbody>
         </table>
 
-        <h2>Menghitung matriks yang ternomalisasi yang terbobot (Y), Untuk bobot yang sudah ditentukan (W)</h2>
+        <h2>Tabel Ternormalisasi Terbobot</h2>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -92,7 +92,7 @@
             </tbody>
         </table>
 
-        <h1>Menentukan Solusi Ideal Positif (A+) dan Matriks Ideal Negatif (A-)</h1>
+        <h2>Solusi Ideal Positif (A+) dan Ideal Negatif (A-)</h2>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -134,7 +134,7 @@
             </tbody>
         </table>
 
-        <h1>Jarak Solusi Ideal Positif dan Negatif</h1>
+        <h2>Jarak Solusi Ideal Positif dan Negatif</h2>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -146,7 +146,7 @@
             <tbody>
                 @foreach ($Dplus as $alternatifIndex => $jarakPlus)
                     <tr>
-                        <td style="text-align: center;">Alternatif {{ $alternatifIndex }}</td>
+                        <td style="text-align: center;">A{{ $alternatifIndex }}</td>
                         <td style="text-align: center;">{{ $jarakPlus }}</td>
                         <td style="text-align: center;">{{ $Dmin[$alternatifIndex] }}</td>
                     </tr>
@@ -154,19 +154,19 @@
             </tbody>
         </table>
 
-        <h1>Nilai Preferensi dan Ranking</h1>
+        <h2>Nilai Preferensi dan Ranking</h2>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
                     <th style="text-align: center;">Alternatif</th>
-                    <th style="text-align: center;">Nilai Preferensi</th>
-                    <th style="text-align: center;">Rank</th>
+                    <th style="text-align: center;">Nilai Preferensi (V)</th>
+                    <th style="text-align: center;">Ranking</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($rank as $alternatif => $jarak)
                     <tr>
-                        <td style="text-align: center;">Alternatif {{ $alternatif }}</td>
+                        <td style="text-align: center;">A{{ $alternatif }}</td>
                         <td style="text-align: center;">{{ $preferensi[$alternatif] }}</td>
                             {{-- Check if the key exists in the $normalisasi array --}}
                         <td style="text-align: center;"> {{ $jarak }}</td> 

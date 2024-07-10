@@ -9,7 +9,7 @@
                 <!-- <i class="fas fa-database"></i> -->
                 <i class="fas fa-utensils"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">VENDORKU <sup></sup></div>
+            <div class="sidebar-brand-text mx-3">VENDORKU<sup></sup></div>
         </a>
 
         <!-- Divider -->

@@ -1,14 +1,15 @@
 @if (Auth::user()->level == 'admin')
-    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #2B2A4C">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #961709">
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
             <div class="sidebar-brand-icon rotate-n-0">
                 {{-- <img src="{{ asset('img/logoRB-removebg-eview.png') }}" alt="Group Logo" width="130px" height="auto"
                     class="brand-image img-circle elevation-1" style="opacity: .8"> --}}
-                <i class="fas fa-database"></i>
+                <!-- <i class="fas fa-database"></i> -->
+                <i class="fas fa-utensils"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">TOPSIS<sup></sup></div>
+            <div class="sidebar-brand-text mx-3">VENDORKU <sup></sup></div>
         </a>
 
         <!-- Divider -->

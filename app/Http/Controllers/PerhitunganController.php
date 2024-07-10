@@ -208,7 +208,7 @@ class PerhitunganController extends Controller
             for ($j = 1; $j <= count($result); $j++) {
                 $jarak += pow(($val[$j] - $result[$j][$i]), 2);
             }
-            $Dplus[$i] = number_format(sqrt($jarak), 3);
+            $Dplus[$i] = round(sqrt($jarak), 3);
         }
         // dd($Dplus);
         return compact('Dplus');
@@ -237,7 +237,7 @@ class PerhitunganController extends Controller
             for ($j = 1; $j <= count($result); $j++) {
                 $jarak += pow(($result[$j][$i] - $val[$j]), 2);
             }
-            $Dmin[$i] = number_format(sqrt($jarak), 3);
+            $Dmin[$i] = round(sqrt($jarak), 3);
         }
         // dd($Dmin);
         return compact('Dmin');
@@ -255,7 +255,8 @@ class PerhitunganController extends Controller
 
         $preferensi = [];
         for ($i = 1; $i <= count($valPlus); $i++) {
-            $preferensi[$i] = number_format($valMin[$i] / ($valPlus[$i] + $valMin[$i]), 3);
+            // $preferensi[$i] = round($valMin[$i] / ($valPlus[$i] + $valMin[$i]), 3);
+            $preferensi[$i] = floor(($valMin[$i] / ($valPlus[$i] + $valMin[$i])) * 1000) / 1000;
         }
         // dd($preferensi);
         return compact('preferensi');

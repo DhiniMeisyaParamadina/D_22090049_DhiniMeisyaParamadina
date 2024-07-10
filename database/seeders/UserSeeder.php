@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         $users = [
             [
                 'name' => 'Dini',
-                'user' => 'dinipemweb',
+                'email' => 'dhinimeisya04@gmail.com',
                 'password' => Hash::make('123456'),
                 'level' => 'admin',
             ],

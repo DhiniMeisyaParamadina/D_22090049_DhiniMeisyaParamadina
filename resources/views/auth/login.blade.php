@@ -24,7 +24,7 @@
 
 </head>
 
-<body style="background-image:url(img/catur.jpg); 
+<body style="background-image:url(https://piguetscatering.com/wp-content/uploads/2022/04/catering-dishes.jpg); 
 background-size:cover;
 height:100vh;">
 
